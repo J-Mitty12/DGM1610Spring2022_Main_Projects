@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,5 +34,18 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, -zBound);
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            Debug.Log("Player has collided with box");
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject);
     }
 }
