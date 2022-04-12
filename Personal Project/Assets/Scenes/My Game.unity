@@ -644,6 +644,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e17d2f49f94f4a4d874c69ac82e2f4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 6841173550430674362, guid: c5fa52cc6afbb4a148116b1abfbc1564, type: 3}
+  - {fileID: 5960502769646360890, guid: bfa4f09c641ca4a698695fcf56a19bbc, type: 3}
+  - {fileID: 4729243836921957655, guid: 0863858246acd452dbec985f7120c95c, type: 3}
+  powewrup: {fileID: 0}
 --- !u!4 &1145291358
 Transform:
   m_ObjectHideFlags: 0
