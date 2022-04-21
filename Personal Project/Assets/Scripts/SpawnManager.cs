@@ -6,7 +6,8 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] enemies;
     public GameObject powewrup;
-
+    public bool spawn = true;
+    public float spawntime = 1f;
     private float zEnemySpawn = 12.0f;
     private float xSpawnRange = 16.0f;
     private float zPowerupRange = 5.0f;
@@ -16,22 +17,26 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         //StartCoroutine(Spawner());
+        StartCoroutine(Spawner());
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(Spawner());
+        
         //yield StartCoroutine(Spawner());
     }
 
     private IEnumerator Spawner()
     {
-        
-        //SpawnEnemy();
-        Debug.Log("wait");
-        yield return new WaitForSeconds(2f);
-        SpawnEnemy();
+        while (spawn)
+        {
+            //SpawnEnemy();
+            //Debug.Log("wait");
+            yield return new WaitForSeconds(spawntime);
+
+            SpawnEnemy();
+        }
     }
     void SpawnEnemy()
     {

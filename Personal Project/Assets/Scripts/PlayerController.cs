@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private float speed = 10.0f;
 
     private Rigidbody playerRb;
-
+    public GameManager gm;
     private float zBound = 6;
     // Start is called before the first frame update
     void Start()
@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Box"))
         {
             Debug.Log("Player has collided with box");
+            gm.RemoveLife(1);
+            Debug.Log(gameData.lives);
         }
     }
 
