@@ -52,10 +52,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Challenge 5\Scripts\GameManagerX.cs" />
-     <Compile Include="Assets\Challenge 5\Scripts\TargetX.cs" />
-     <Compile Include="Assets\Challenge 5\Scripts\DestroyObjectX.cs" />
      <Compile Include="Assets\Challenge 5\Scripts\DifficultyButtonX.cs" />
+     <Compile Include="Assets\Challenge 5\Scripts\GameManagerX.cs" />
+     <Compile Include="Assets\Challenge 5\Scripts\DestroyObjectX.cs" />
+     <Compile Include="Assets\Challenge 5\Scripts\TargetX.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -297,9 +297,6 @@
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.27f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>/Users/julianmitton/Documents/Unity Projects/1610Spring2022Backup/Challenge 5/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
  <HintPath>/Users/julianmitton/Documents/Unity Projects/1610Spring2022Backup/Challenge 5/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
@@ -308,6 +305,9 @@
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>/Users/julianmitton/Documents/Unity Projects/1610Spring2022Backup/Challenge 5/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/julianmitton/Documents/Unity Projects/1610Spring2022Backup/Challenge 5/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.27f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
