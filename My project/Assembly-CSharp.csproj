@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\PowerupBehavior.cs" />
      <Compile Include="Assets\Scripts\intData.cs" />
      <Compile Include="Assets\CharacterBehavior.cs" />
+     <Compile Include="Assets\Scripts\CameraFollow.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.27f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
