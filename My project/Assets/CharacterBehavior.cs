@@ -38,9 +38,9 @@ public class CharacterBehavior : MonoBehaviour
             isOnGround = false;
             
         }
-
+        
     }
-
+    
     private void OnCollisionEnter(Collision other)
     {
         //Checks if the Player is on the ground
@@ -50,4 +50,5 @@ public class CharacterBehavior : MonoBehaviour
             Debug.Log("Grounded");
         }
     }
+
 }
