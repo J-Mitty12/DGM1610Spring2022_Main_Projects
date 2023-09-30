@@ -15,12 +15,14 @@ public class CharacterBehavior : MonoBehaviour
 
 
     public Rigidbody playerRb;
+    public Animator playerAnim;
     
     
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
+        playerAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,7 +32,35 @@ public class CharacterBehavior : MonoBehaviour
         vInput = Input.GetAxis("Vertical");
         
         
-        transform.Translate(Vector3.right * (Time.deltaTime * speed * hInput));
+        transform.Translate(Vector3.forward * (Time.deltaTime * speed * hInput * -1));
+
+        if (hInput < 0)
+        {
+            playerAnim.SetFloat("Spd", -hInput);
+        }
+        else
+        {
+            playerAnim.SetFloat("Spd", hInput);
+        }
+        
+        
+        //Another solution to get player Animator to work
+        /*if (hInput != 0)
+        {
+            playerAnim.SetBool("isWalking", true);
+        }
+        else if (hInput > 0.5)
+        {
+            playerAnim.SetBool("isRunning", true);
+            playerAnim.SetBool("isRunning", false);
+        }
+        else
+        {
+            playerAnim.SetBool("isWalking", false);
+        }
+        */
+        
+        
 
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
@@ -39,6 +69,10 @@ public class CharacterBehavior : MonoBehaviour
             
         }
         
+        playerAnim.SetBool("Grounded", isOnGround);
+
+        //print(hInput);
+
     }
     
     private void OnCollisionEnter(Collision other)
