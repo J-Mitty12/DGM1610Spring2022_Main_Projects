@@ -84,12 +84,15 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
+     <Compile Include="Assets/Scripts/SimplerAI.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets/Digital Assests" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Sprites" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets/Maya/clips" />
      <Folder Include="Assets/TextMesh Pro/Sprites" />
+     <Folder Include="Assets/HoudiniEngineAssetCache/Baked" />
      <Folder Include="Assets/TextMesh Pro/Resources/Sprite Assets" />
      <Folder Include="Assets/Maya/renderData/fur/furShadowMap" />
      <Folder Include="Assets/Maya/Time Editor" />
@@ -97,6 +100,7 @@
      <Folder Include="Assets/Scripts" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
      <Folder Include="Assets/Maya/sourceimages/3dPaintTextures" />
+     <Folder Include="Assets/Scenes/NavMeshSample" />
      <Folder Include="Assets/Maya/Time Editor/Clip Exports" />
      <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald-Bold - OFL.txt" />
      <Folder Include="Assets/Maya/movies" />
@@ -112,7 +116,9 @@
      <Folder Include="Assets/Materials" />
      <Folder Include="Assets/PreFabs" />
      <Folder Include="Assets/Maya/cache" />
+     <Folder Include="Assets/HoudiniEngineAssetCache/Working" />
      <Folder Include="Assets/Maya/sceneAssembly" />
+     <Folder Include="Assets/HoudiniEngineAssetCache/Baked/NewRockGeo1" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets/Maya/assets/Assets" />
      <Folder Include="Assets/TextMesh Pro" />
@@ -123,6 +129,7 @@
      <Folder Include="Assets/Textures" />
      <Folder Include="Assets/SO" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
+     <Folder Include="Assets/HoudiniEngineAssetCache" />
      <Folder Include="Assets/Scenes" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
@@ -147,10 +154,13 @@
      <Folder Include="Assets/Maya/autosave" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
      <Folder Include="Assets/Maya/cache/particles" />
+     <Folder Include="Assets/HoudiniEngineAssetCache/Working/object_julianmitton.dev.NewRockGeo.1.0" />
      <Folder Include="Assets/Maya/scenes" />
+     <None Include="Assets/package.json" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Prefabs" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Scenes" />
      <Folder Include="Assets/Maya/renderData/iprImages" />
+     <Folder Include="Assets/HoudiniEngineAssetCache/Baked/NewRockGeo1/Meshes" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets/Maya/data" />
      <Folder Include="Assets/Maya/images" />
@@ -166,9 +176,11 @@
      <Folder Include="Assets/Maya/scripts" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+     <Folder Include="Assets/HoudiniEngineAssetCache/Baked/NewRockGeo1/Materials" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne.json" />
+     <Folder Include="Assets/Scenes/NavMeshSample2" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
      <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Bangers - OFL.txt" />
      <Reference Include="UnityEngine">
@@ -830,6 +842,14 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="HoudiniEngineUnityEditor.csproj">
+      <Project>{d9766e12-418d-ad4c-3eb4-96c5330e4fbb}</Project>
+      <Name>HoudiniEngineUnityEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="HoudiniEngineUnity.csproj">
+      <Project>{cc5dfd5c-b315-76d8-6309-c295b046208f}</Project>
+      <Name>HoudiniEngineUnity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
